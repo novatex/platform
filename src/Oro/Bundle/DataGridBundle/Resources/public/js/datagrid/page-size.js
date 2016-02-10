@@ -112,7 +112,7 @@ define([
                 _.bind(
                     function(item) {
                         return item.size === undefined ?
-                            this.collection.state.pageSize === item : this.collection.state.pageSize === item.size;
+                            this.collection.state.pageSize == item : this.collection.state.pageSize == item.size;
                     },
                     this
                 )
